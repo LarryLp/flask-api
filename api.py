@@ -615,4 +615,4 @@ if __name__ == "__main__":
     scheduler = APScheduler()
     scheduler.init_app(app)
     scheduler.start()
-    app.run(host='localhost', debug=True)
+    app.run(host='0.0.0.0', debug=True)
