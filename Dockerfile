@@ -1,9 +1,9 @@
 FROM frolvlad/alpine-python3:latest
 
-RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --no-cache-dir flask
-RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --no-cache-dir flask_apscheduler
-RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --no-cache-dir pyyaml
-RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --no-cache-dir jwt
+RUN pip install flask
+RUN pip install flask_apscheduler
+RUN pip install pyyaml
+RUN pip install jwt
 
 WORKDIR /app
 COPY utils.py .
